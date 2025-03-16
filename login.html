@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="loginstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="logo-trilhas-inova.png" alt="Imagem ilustrativa">
+        </div>
+        <div class="form-container">
+            <h2>Tela de login</h2>
+            <form id="loginForm"  method="GET">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    <p class="error-message" id="email-error">coloque seu e-mail!</p>
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite seu nome" required>
+                    <p class="error-message" id="senha-error">Coloque sua senha </p>
+                </div>
+                <button type="button" onclick="window.location.href='cadastro.html'">Fazer Cadastro</button> 
+                <button type="button" onclick="validarLogin()">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

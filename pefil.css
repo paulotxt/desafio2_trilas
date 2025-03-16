@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E4EF5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    display: flex;
+    background-color: #1E4EF5;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+.perfil {
+    width: 50%;
+}
+.perfil img {
+    width: 270px;
+    height: 270px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 10px;
+}
+.perfil h2 {
+    margin-top: 10px;
+}
+.editais {
+    width: 50%;
+}
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF5722;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.status {
+    display: flex;
+    align-items: center;
+}
+.status span {
+    margin-left: 5px;
+}
+.aberto::before {
+    content: '•';
+    color: green;
+}
+.fechado::before {
+    content: '•';
+    color: red;
+}
