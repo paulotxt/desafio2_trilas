@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil do Usuário</title>
     <link rel="stylesheet" href="pefil.css">
 </head>
+
 <body>
     <div class="container">
         <div class="perfil">
             <h2>Perfil do Usuário</h2>
-            <img src="/img/pefil.jpg" alt="Foto do Usuário">
-            <p><strong>Nome do Usuário</strong></p>
-            <p>Habilidade do Usuário</p>
-            <p>Sobre o Usuário</p>
+
+            <img id="fotoPerfil" src="https://via.placeholder.com/270" alt="Foto do Usuário">
+            <input type="file" id="fotoInput" accept="image/*" style="display: none;" />
+
+            <div class="campo">
+                <strong>Nome:</strong> <span id="nomeTexto">Nome do Usuário</span>
+                <input type="text" id="nomeInput" />
+            </div>
+
+            <div class="campo">
+                <strong>Habilidade:</strong> <span id="habilidadeTexto">Habilidade do Usuário</span>
+                <input type="text" id="habilidadeInput" />
+            </div>
+
+            <div class="campo">
+                <strong>Sobre:</strong> <span id="sobreTexto">Sobre o Usuário</span>
+                <textarea id="sobreInput"></textarea>
+            </div>
+
+            <div class="campo redes">
+                <strong>LinkedIn:</strong> <a id="linkedinTexto" href="#" target="_blank">linkedin.com/seu-perfil</a>
+                <input type="text" id="linkedinInput" />
+            </div>
+
+            <div class="campo redes">
+                <strong>GitHub:</strong> <a id="githubTexto" href="#" target="_blank">github.com/seu-perfil</a>
+                <input type="text" id="githubInput" />
+            </div>
+
+            <div class="botoes">
+                <button class="editar" onclick="editarPerfil()">Editar</button>
+                <button class="salvar" onclick="salvarPerfil()">Salvar</button>
+            </div>
         </div>
+
         <div class="editais">
             <h2>Editais</h2>
             <a href="edital.html" class="botao">
@@ -31,5 +63,8 @@
             </a>
         </div>
     </div>
+    <script src="pefil.js"></script>
+
 </body>
+
 </html>

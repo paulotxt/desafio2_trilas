@@ -5,7 +5,8 @@
     font-family: 'Arial', sans-serif;
 }
 
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
 }
@@ -27,10 +28,10 @@ body, html {
 
 /* Ajuste do tamanho da imagem */
 .image-container img {
-    width: 70%;  
-    height: auto; 
-    max-height: 100vh; 
-    object-fit: contain; 
+    width: 70%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: contain;
 }
 
 .form-container {
@@ -67,7 +68,7 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
-    background: #ffffff; 
+    background: #ffffff;
     color: black;
 }
 
@@ -85,13 +86,24 @@ button {
 }
 
 button:hover {
-    background: #c1320e; 
+    background: #c1320e;
+}
+
+.error {
+    border: 2px solid red;
+    background-color: #ffcccc;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column-reverse; /
+        flex-direction: column-reverse;/
     }
 
     .image-container {
